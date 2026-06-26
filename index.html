@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>FAST FOOD ШАУРМАБРО</title>
+</head>
+
+<body>
+
+    <!--   <h1 class="text-9xl font-bold underline text-blue-500 font-bold">
+        aka
+    </h1>
+
+    <button class=" mt-4 bg-green-500 text-wnite px-5 py-2 rounded-lg hover:bg-sky-600 transition-color">нажми</button>
+
+    <div class=" bg-green-700 p-4 mt-6">
+        <img class="w-full"
+            src="data:image/jpeg;base64,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"
+            alt="">
+    </div>-->
+
+
+    <body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+        <body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+            <!-- Шапка (Навигация) -->
+            <header class="bg-white shadow-sm sticky top-0 z-50">
+                <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+                    <div class="text-2xl font-black text-orange-600 tracking-tighter">
+                        ШАУРМА<span class="text-gray-900">БРО</span>
+                    </div>
+                    <nav class="hidden md:flex space-x-8 font-medium">
+                        <a href="#menu" class="hover:text-orange-500 transition">Меню</a>
+                        <a href="#delivery" class="hover:text-orange-500 transition">Доставка</a>
+                        <a href="#contacts" class="hover:text-orange-500 transition">Контакты</a>
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <!-- Кнопка Войти -->
+                        <button id="openLogin" class="text-gray-600 hover:text-orange-500 font-semibold transition">
+                            Войти
+                        </button>
+                        <!-- Кнопка Корзины -->
+                        <button id="openOrder"
+                            class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-full font-semibold transition shadow-md flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <span>Заказать</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Главный экран -->
+            <section class="bg-gradient-to-br from-orange-50 to-orange-100 py-20">
+                <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                        <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                            Самая мощная шаурма <br><span class="text-orange-600">на районе</span>
+                        </h1>
+                        <p class="text-lg text-gray-600 mb-8">
+                            Много мяса, хрустящий лаваш и фирменный соус. Доставим горячей за 30 минут!
+                        </p>
+                        <a href="#menu"
+                            class="inline-block bg-gray-900 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-800 transition shadow-lg">
+                            Выбрать шаурму
+                        </a>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="blob:https://gemini.google.com/1f79af65-ba95-4c94-884c-1cb0c4a6a5f7"
+                            alt="Сочная шаурма"
+                            class="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition duration-300">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Раздел Меню -->
+            <section id="menu" class="py-20">
+                <div class="max-w-6xl mx-auto px-4">
+                    <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Наше Меню</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Товар 1 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="Классическая" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-gray-900">Классика</h3>
+                                    <span
+                                        class="bg-orange-100 text-orange-600 text-xs font-bold px-2 py-1 rounded">ХИТ</span>
+                                </div>
+                                <p class="text-gray-500 text-sm mb-6 h-10">Куриное филе, свежие овощи, чесночный соус,
+                                    хрустящий лаваш.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-black text-gray-900">1 500 ₸</span>
+                                    <button
+                                        class="bg-orange-100 text-orange-600 hover:bg-orange-500 hover:text-white px-4 py-2 rounded-lg font-bold transition">
+                                        + Добавить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Товар 2 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=400&q=80"
+                                alt="Сырная мощь" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Сырная мощь</h3>
+                                <p class="text-gray-500 text-sm mb-6 h-10">Двойной сыр моцарелла, курица, халапеньо,
+                                    сырный соус.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-black text-gray-900">1 800 ₸</span>
+                                    <button
+                                        class="bg-orange-100 text-orange-600 hover:bg-orange-500 hover:text-white px-4 py-2 rounded-lg font-bold transition">
+                                        + Добавить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Товар 3 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=400&q=80"
+                                alt="Острая" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-gray-900">Острая</h3>
+                                    <span
+                                        class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">ОСТРО</span>
+                                </div>
+                                <p class="text-gray-500 text-sm mb-6 h-10">Говядина, маринованный лук, острый соус чили,
+                                    капуста.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-black text-gray-900">2 000 ₸</span>
+                                    <button
+                                        class="bg-orange-100 text-orange-600 hover:bg-orange-500 hover:text-white px-4 py-2 rounded-lg font-bold transition">
+                                        + Добавить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Подвал -->
+            <footer id="contacts" class="bg-gray-900 text-gray-400 py-12">
+                <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-2xl font-black text-white tracking-tighter mb-4 md:mb-0">
+                        ШАУРМА<span class="text-orange-500">БРО</span>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <p>Ежедневно с 10:00 до 23:00</p>
+                        <a href="tel:+77770000000"
+                            class="text-white hover:text-orange-500 text-xl font-bold transition">+7 (777) 000-00-00</a>
+                    </div>
+                </div>
+            </footer>
+
+
+            <!-- ================= МОДАЛЬНЫЕ ОКНА ================= -->
+
+            <!-- Модалка Входа (По умолчанию скрыта классом hidden) -->
+            <div id="loginModal"
+                class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden backdrop-blur-sm">
+                <div class="bg-white p-8 rounded-2xl shadow-xl max-w-sm w-full mx-4 relative">
+                    <button id="closeLogin"
+                        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl font-bold">&times;</button>
+
+                    <h3 class="text-2xl font-black mb-6 text-gray-900">Войти в аккаунт</h3>
+                    <form id="loginForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Телефон или
+                                Email</label>
+                            <input type="text" required placeholder="+7 (707) 123-4567"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Пароль</label>
+                            <input type="password" required placeholder="••••••••"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500 transition">
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition shadow-md">
+                            Войти
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Модалка Заказа и Адреса (По умолчанию скрыта классом hidden) -->
+            <div id="orderModal"
+                class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden backdrop-blur-sm">
+                <div class="bg-white p-8 rounded-2xl shadow-xl max-w-md w-full mx-4 relative">
+                    <button id="closeOrder"
+                        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl font-bold">&times;</button>
+
+                    <h3 class="text-2xl font-black mb-2 text-gray-900">Оформление заказа</h3>
+                    <p class="text-sm text-gray-500 mb-6">Заполните данные, и наш курьер сразу выедет к вам.</p>
+
+                    <form id="orderForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Ваше Имя</label>
+                            <input type="text" required placeholder="Тамерлан"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Телефон</label>
+                            <input type="tel" required placeholder="+7 (777) 000-00-00"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Адрес доставки</label>
+                            <input type="text" required placeholder="Город, улица, дом, квартира"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500 transition">
+                        </div>
+
+                        <div class="border-t border-gray-100 pt-4 mt-6 flex justify-between items-center">
+                            <span class="text-gray-500 font-medium">Итого к оплате с учётом скидки:</span>
+                            <span class="text-2xl font-black text-gray-900">1 500 ₸</span>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition shadow-md mt-4">
+                            Подтвердить заказ
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- ================= JAVASCRIPT LOGIC ================= -->
+            <script>
+                // Получаем элементы окон и кнопок
+                const loginModal = document.getElementById('loginModal');
+                const orderModal = document.getElementById('orderModal');
+
+                const openLogin = document.getElementById('openLogin');
+                const closeLogin = document.getElementById('closeLogin');
+
+                const openOrder = document.getElementById('openOrder');
+                const closeOrder = document.getElementById('closeOrder');
+
+                // Логика для окна Входа
+                openLogin.addEventListener('click', () => {
+                    loginModal.classList.remove('hidden');
+                });
+                closeLogin.addEventListener('click', () => {
+                    loginModal.classList.add('hidden');
+                });
+
+                // Логика для окна Заказа
+                openOrder.addEventListener('click', () => {
+                    orderModal.classList.remove('hidden');
+                });
+                closeOrder.addEventListener('click', () => {
+                    orderModal.classList.add('hidden');
+                });
+
+                // Закрытие окон при клике на серый фон вокруг формы
+                window.addEventListener('click', (e) => {
+                    if (e.target === loginModal) loginModal.classList.add('hidden');
+                    if (e.target === orderModal) orderModal.classList.add('hidden');
+                });
+
+                // Обработка отправки форм (пока просто выводим уведомления)
+                document.getElementById('loginForm').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Вы успешно вошли в аккаунт!');
+                    loginModal.classList.add('hidden');
+                });
+
+                document.getElementById('orderForm').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Заказ принят! Курьер уже едет.');
+                    orderModal.classList.add('hidden');
+                });
+            </script>
+
+        </body>
+    </body>
+
+</html>
